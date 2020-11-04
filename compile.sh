@@ -1,5 +1,7 @@
 for jar in closure-compiler*.jar; do
-    echo "Compiling with $jar.."
+    echo
+    echo "Compiling with $jar"
+    echo
     java -cp $jar \
          com.google.javascript.jscomp.CommandLineRunner \
          --hide_warnings_for=closure/goog/base.js \
