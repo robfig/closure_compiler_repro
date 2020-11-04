@@ -6,12 +6,7 @@ for jar in closure-compiler*.jar; do
          com.google.javascript.jscomp.CommandLineRunner \
          --hide_warnings_for=closure/goog/base.js \
          --js_module_root `pwd` \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/base.js \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/transitionalforwarddeclarations.js \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/debug/error.js \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/dom/nodetype.js \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/asserts/asserts.js \
-         --js $ALPHA/external/com_google_javascript_closure_library/closure/goog/array/array.js \
+         --js base.js \
          --js file1.js \
          --js file2.js \
          --language_in ECMASCRIPT_2018 \

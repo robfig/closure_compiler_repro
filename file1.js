@@ -6,8 +6,6 @@ import {
   VARIABLE_2
 } from '/file2';
 
-goog.require('goog.array');
-
 export class MyClass {
     constructor() {
         console.log("ctor");
